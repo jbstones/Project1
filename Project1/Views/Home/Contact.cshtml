@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Contact Mission Connections";
+}
+@model Project1.Models.UserResponse
+<link href="~/Content/Proyecto1.css" rel="stylesheet" />
+<h2>@ViewBag.Title.</h2>
+<h4> Mail:</h4>
+<address>
+    1565 N. University Ave<br />
+    Provo, UT 84604<br />
+    <abbr title="Phone">P:</abbr>
+    801.555.0100
+</address>
+
+<h4>Email:</h4>
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@missionconnections.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@missionconnections.com</a>
+</address>
+
+<h4> Let us contact you:</h4>
+
+    @using (Html.BeginForm())
+{
+    <p>Name: @Html.TextBoxFor(x => x.Name)</p>
+    <p>Email: @Html.TextBoxFor(x => x.Email)</p>
+    <p>
+        Subject:
+        @Html.DropDownListFor(x => x.Subject, new[]
+                  {
+                    new SelectListItem()
+                    {
+                      Text = "Question"
+                    },
+                    new SelectListItem()
+                    {
+                      Text = "Concern"
+                    },
+                    new SelectListItem()
+                    {
+                        Text = "Other"
+                    }
+                  },
+                  
+                  "Please choose one")
+    </p>
+     <p> Message: @Html.TextAreaFor(x => x.Message)</p>   
+    <input type="submit" value="Submit" />
+}

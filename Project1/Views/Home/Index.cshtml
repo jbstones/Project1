@@ -1,0 +1,40 @@
+﻿@*Gold Plating: User Interface – Focused on making a beautiful user experience.
+-	Growing Links with hover
+-	Changing jumbotrons with different pages
+Inspiring Page*@
+
+
+@{
+    ViewBag.Title = "Mission Connections";
+}
+<link href="~/Content/Proyecto1.css" rel="stylesheet" />
+<div class="jumbotron" id="homejumbo">
+        <div class="row">
+            <h1 class="col-sm-12 text-left" id="jumbotitle">Mission Connections</h1>
+    
+        <p class="col-sm-12 text-right" id="jumbocall"> Ask the questions you have about your future mission!</p>
+</div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-7">
+        <a href="@Url.Action("Missions","Home")"><img class="link-styling" id="missionchest" src="~/Content/World-Map-with-Borders1.jpg" /></a>
+    </div>
+    <a href="@Url.Action("ldsorg","Home")"><img class="col-sm-5 link-styling" id="missionchest" src="~/Content/missionchesttag.jpg" /></a>
+
+</div>
+
+<footer id="indexfooter">
+    <div class="row">
+        <div class="col-md-6 text-center">
+
+            <a href="@Url.Action("About","Home")">
+                <img class="link-styling" id="navpic" src="~/Content/About-Us.jpg" /></a>
+                <p>Learn more about us and our purpose!</p>
+</div>
+        <div class="col-md-6 text-center">
+            <a href="@Url.Action("Contact","Home")"><img class="link-styling" id="navpic" src="~/Content/contact-us-banner.jpg" /></a>
+        </div>
+    </div>
+</footer>

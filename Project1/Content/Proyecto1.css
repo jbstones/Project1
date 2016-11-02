@@ -1,0 +1,100 @@
+﻿#homejumbo {
+    background-image: url('artsy artsy.jpg');
+    display: flex;
+    background-size: cover;
+    height: 17em;
+    
+}
+
+#jumbotitle{
+    font-family: 'Edwardian Script ITC'!important;
+    font-size: 4em;
+    color: lightgray;
+    margin-top: -.2em;
+}
+
+#jumbotitletwo{
+    font-family: 'Edwardian Script ITC'!important;
+    font-size: 4em;
+    color: white;
+    vertical-align:baseline!important;
+    padding-top: .5em;
+}
+
+#jumbocall {
+    font-family: 'Copperplate Gothic' !important;
+    font-size: 1em;
+    color: lightgray !important;
+}
+
+#navpic{
+    border-radius: 25px;
+    height: 120px;
+}
+
+#missionchest{
+    border-radius: 25px;
+    height: 18em;
+}
+
+#indexfooter{
+    border-top: solid lightgray;
+    margin-top: 10em!important;
+    padding-top: 3em;
+}
+
+#mishjumbo {
+    background-image: url('earth.jpg');
+    display: flex;
+    background-size: cover;
+    height: 15em;
+}
+
+.link-styling {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.link-styling:hover {
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+#MissionsJumbo{
+    display: flex!important;
+    background-size: cover!important;
+    height: 15em;
+}
+
+.missionflag{
+    height: 200px;
+    border: solid black;
+}
+
+#missionfactcontainer{
+    border: solid black!important;
+    border-radius: 25px;
+    font-family: 'High Tower Text'!important;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+#missionfactcontainer h3{
+    font-family: 'High Tower Text'!important;
+}
+
+.GenMishInfo{
+    font-family: 'High Tower Text';
+}
+
+.inspirephoto{
+    height: 25em;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+#center {
+   display: table;
+   margin: 0 auto;
+}

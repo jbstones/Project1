@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Missions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Proyecto1.css" rel="stylesheet" />
+<section class="jumbotron text-center" id="mishjumbo">
+    <div class="container">
+        <div class="row">
+            <h2 class="col-sm-12" id="jumbotitletwo"> Select Your Mission </h2>
+            <div class="dropdown" id="center">
+                <button class="btn btn-small btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Missions
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="@Url.Action("MissionFAQs","Home", new { Mission = "London"})">England London Mission</a></li>
+                    <li><a href="@Url.Action("MissionFAQs","Home", new { Mission = "Milan"})"> Italy Milan Mission</a></li>
+                    <li><a href="@Url.Action("MissionFAQs","Home", new { Mission = "Boston"})">Massachusetts Boston Mission</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<button type="button" class="btn btn-small btn-default dropdown-toggle" data-toggle="dropdown">
+                            Dropdown 
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                        </u*@

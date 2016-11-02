@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "MissionFAQs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Proyecto1.css" rel="stylesheet" />
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+    <li class="breadcrumb-item"><a href="@Url.Action("Missions","Home")">Missions</a></li>
+    <li class="breadcrumb-item active">@ViewBag.Mission</li>
+</ol>
+<section class="jumbotron" style="background-image: url('@ViewBag.CountryImage')" id="MissionsJumbo">
+    <div class="container">
+        <div class="row">
+            <h2 class="col-sm-12 text-center" id="jumbotitletwo">@ViewBag.Mission</h2>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="missionfactcontainer">
+    <div class="row">
+        <h3 class="col-sm-12 text-center GenMishInfo"> General Mission Info </h3>
+        <p class="col-sm-12"> <b>Mission Presidents:</b> @ViewBag.PresidentName </p>
+        <p class="col-sm-12"> <b>Mission Address:</b> @ViewBag.Address </p>
+        <p class="col-sm-12"> <b>Mission Language: </b>@ViewBag.Language </p>
+        <p class="col-sm-12"> <b>Mission Climate:</b> @ViewBag.Climate </p>
+        <p class="col-sm-12"> <b>Dominate Religion:</b> @ViewBag.DominateReligion </p>
+        <p class="col-sm-12"> <b>Mission Flag:</b> <img class="missionflag" src="@ViewBag.MissionFlag" /> </p>
+        
+    </div>
+</section>
+
+<section class="container" id="missionfactcontainer">
+    <div class="row">
+        <h2 class="col-sm-12 text-center GenMishInfo"> Frequently Asked Questions </h2>
+        <h3 class="col-sm-12"> <b> What does a typcial day in the @ViewBag.Mission look like? </b> </h3>
+        <p class="col-sm-12"> We follow the missionary schedule found in the White Handbook. Wake up at 6:30AM, study from 8AM to 
+        11AM and work until 9PM. We have District Meetings once a week. Each companionship has one or two scheduled service opportunities
+        each week as well.
+         </p>
+        <p>
+            <textarea class="col-sm-12" rows="4" cols="50" style="margin-left: 10px">Type your answer here.</textarea>
+        </p>
+        <input class="col-sm-12" type="submit" value="Submit" style="margin-left: 10px" />
+        <h3 class="col-sm-12"> <b>How long will it take me to learn my mission language?</b> </h3>
+        <p class="col-sm-12"> It all depends on how much you immerse yourself in the language. The more you speak it, the better you speak it.
+        I found that most missionaries could have a semi-fluent conversation in about 6 months. </p>
+        <p>
+            <textarea class="col-sm-12" rows="4" cols="50" style="margin-left: 10px">Type your answer here.</textarea>
+        </p>
+        <input class="col-sm-12" type="submit" value="Submit" style="margin-left: 10px" />
+        <h3 class="col-sm-12"> <b>What more do you wish you had brought with you other than what is listed in the mission packet?</b> </h3>
+        <p class="col-sm-12"> Good question! The first thing that comes to mind are pictures of my family. Family is a big deal on the
+        mission. You can show the pictures to investigators and other missionaries. </p>
+        <p>
+            <textarea class="col-sm-12" rows="4" cols="50" style="margin-left: 10px">Type your Answer here.</textarea>
+        </p>
+        <input class="col-sm-12" type="submit" value="Submit" style="margin-left: 10px" />
+        <h3 class="col-sm-12"><b>Have a question? Ask it!</b></h3>
+        <p>
+            <textarea class="col-sm-12" rows="4" cols="50" style="margin-left: 10px">Type question here.</textarea>
+        </p>
+        <input class="col-sm-12" type="submit" value="Submit" style="margin-left: 10px; margin-bottom:10px" />
+    </div>
+</section>
